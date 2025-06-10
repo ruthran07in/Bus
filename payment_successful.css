@@ -1,0 +1,124 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   IMPORT BUSLIST CSS FOR HEADER, NAVDRAWER, FOOTER, ETC.
+───────────────────────────────────────────────────────────────────────── */
+@import url('buslist.css');
+
+/* ─────────────────────────────────────────────────────────────────────────
+   PAYMENT SUCCESSFUL PAGE STYLES
+───────────────────────────────────────────────────────────────────────── */
+
+/* MAIN BOX CONTAINER */
+.success-box {
+  background: #EFF8FF; /* light blue */
+  border-radius: 16px;
+  margin: 16px;
+  padding: 16px 8px 24px 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* GREEN CHECK ICON */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* THANK YOU TEXT */
+.thank-you {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.thank-you .small-text {
+  display: block;
+  font-size: 1rem;
+  color: #102542;
+}
+
+.thank-you .large-text {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #102542;
+  margin-top: 4px;
+}
+
+/* DETAILS TABLE */
+.details-table {
+  width: 100%;
+  margin: 0 auto 24px auto;
+  font-size: 0.9rem;
+  color: #102542;
+}
+
+.details-table .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 16px;
+}
+
+.details-table .label {
+  font-weight: 500;
+}
+
+.details-table .value {
+  font-weight: 600;
+}
+
+/* IMPORTANT NOTICE BOX */
+.notice-box {
+  background: #004EA8; /* dark blue */
+  border-radius: 12px;
+  margin: 0 16px 24px 16px;
+  padding: 16px;
+  color: #ffffff;
+}
+
+.notice-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.notice-header .notice-icon {
+  font-size: 1.25rem;
+}
+
+.notice-header .notice-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.notice-content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 8px 0;
+}
+
+/* SEE MY JOURNEY BUTTON */
+.see-journey-btn {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 0 auto 16px auto;
+  background: #FF6B00;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.see-journey-btn:hover {
+  background: #A92C1C;
+}
+
+/* BOTTOM SPACING TO AVOID OVERLAP WITH FOOTER */
+main {
+  margin-bottom: 60px;
+}

@@ -1,0 +1,470 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   IMPORTS (if any)
+───────────────────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+/* ─────────────────────────────────────────────────────────────────────────
+   RESET + BASE STYLES
+───────────────────────────────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fc;
+  color: #102542;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   HEADER + BANNER
+───────────────────────────────────────────────────────────────────────── */
+.header-banner {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.header-content {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+/* “Go Back” Button */
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem; /* match hamburger size */
+  color: #102542;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Centered Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  height: 28px;
+  width: auto;
+}
+
+/* Hamburger Menu */
+.menu-btn {
+  font-size: 1.6rem;
+  color: #102542;
+  cursor: pointer;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   NAVIGATION DRAWER (SLIDE‐IN)
+───────────────────────────────────────────────────────────────────────── */
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -240px;
+  width: 240px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+  transition: right 0.25s ease-in-out;
+  z-index: 10;
+}
+
+.nav-drawer.open {
+  right: 0;
+}
+
+.nav-list {
+  list-style: none;
+  margin-top: 60px;
+}
+
+.nav-list .nav-item {
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-list .nav-item a {
+  text-decoration: none;
+  color: #102542;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   MAIN CONTENT (FIVE BOXES)
+───────────────────────────────────────────────────────────────────────── */
+main {
+  margin-top: -140px;
+   position: relative;
+  padding: 0 16px;
+}
+
+/* Base box styling (all boxes) */
+.box {
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 2px solid rgba(158, 212, 255, 0.30);
+  overflow: hidden;
+}
+
+/* ─── BOX 1: White @60% opacity ─────────────────────────────────────────── */
+.box-1 {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.box-1 .box-content {
+  padding: 12px 16px;
+}
+
+.box-1 .line1 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #102542;
+  margin-bottom: 6px;
+}
+
+.box-1 .line2 {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ─── BOX 2: unchanged ─────────────────────────────────────────────────── */
+.box-2 {
+  background: #E2F3FF;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box-2 .box-header {
+  background: #D4ECFF;
+  color: #434343;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.box-2 .box-body {
+  background: #EFF8FF;
+  padding: 12px 16px;
+  color: #102542;
+  font-size: 0.95rem;
+}
+
+/* ─── BOX 3: unchanged styling except timeline overrides via inline styles ─ */
+.box-3 {
+  background: #E2F3FF;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box-3 .box-header {
+  background: #D4ECFF;
+  color: #434343;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.box-3 .box-body {
+  background: #EFF8FF;
+  padding: 12px 16px;
+  color: #102542;
+  font-size: 0.95rem;
+}
+
+/* ─── BOX 4: unchanged styling except timeline overrides via inline styles ─ */
+.box-4 {
+  background: #E2F3FF;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box-4 .box-header {
+  background: #D4ECFF;
+  color: #434343;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.box-4 .box-body {
+  background: #EFF8FF;
+  padding: 12px 16px;
+  color: #102542;
+  font-size: 0.95rem;
+}
+
+/* ─── BOX 5: unchanged styling except timeline overrides via inline styles ─ */
+.box-5 {
+  background: #E2F3FF;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box-5 .box-header {
+  background: #D4ECFF;
+  color: #434343;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.box-5 .box-body {
+  background: #EFF8FF;
+  padding: 12px 16px;
+  color: #102542;
+  font-size: 0.95rem;
+}
+
+/* Common timeline styling for all boxes */
+.stops-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.stops-row .stop {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #102542;
+  flex: 1;
+  text-align: justify;
+}
+
+.timeline {
+  position: relative;
+  height: 32px; /* icon + dot + spacing */
+  margin-bottom: 8px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 22px; /* icon 16px + half dot 6px */
+  left: 6%;
+  right: 8%;
+  width: 85%;
+  align-items: center;
+  height: 2px;
+  background: #102542;
+}
+
+.timeline-active-line {
+  position: absolute;
+  top: 22px; /* will be overridden inline */
+  /* left and width set inline per box */
+  height: 2px;
+  left: 6%;
+  right: 8%;
+  width: 20%;
+  background: #ff6b00;
+}
+
+.timeline-dots {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+    left: 6%;
+    right: 8%;
+  width: 85%;
+  height: 32px;
+  z-index: 2;
+}
+
+.dot-container {
+  position: relative;
+  width: 12px;
+  height: 32px;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.dot {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #102542; /* black by default */
+}
+
+.dot-2, .dot-3 {
+  background: #ff6b00; /* orange for specific dots */
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  margin-bottom: 18px;
+}
+
+.time-item {
+  text-align: center;
+  flex: 1;
+  font-size: 0.85rem;
+  color: #102542;
+}
+
+.view-all {
+  text-align: center;
+  color: #ff6b00;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(158, 212, 255, 0.30);
+  margin-bottom: 12px;
+}
+
+.fare {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #003b8b;
+  margin-bottom: 8px;
+}
+
+.availability {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+/* “BOOK SEAT” button with small left/right gap */
+.btn-book {
+  width: calc(100% - 32px);
+  background: #ff6b00;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 6px 16px 6px 16px;
+  transition: background 0.2s;
+}
+.btn-book:hover {
+  background: #A92C1C;
+}
+
+/* “Sold Out” button */
+.btn-soldout {
+  width: calc(100% - 32px);
+  background: #A1A1A1;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: default;
+  margin: 6px 16px 6px 16px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   FOOTER + BOTTOM NAVIGATION (same as home page)
+───────────────────────────────────────────────────────────────────────── */
+footer {
+  margin-top: 20px;
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px;
+
+}
+
+.chat-btn,
+.call-btn {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  color: #00294A;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  background: #ffffff;
+  border-top: 1px solid #ccc;
+}
+
+.nav-item-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.nav-item-bottom.active {
+  color: #003b8b;
+  font-weight: bold;
+}
+
+.nav-icon-bottom {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+

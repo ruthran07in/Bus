@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SLTB e-seat – Payment Successful</title>
+  <!-- Reuse the existing buslist.css for header/footer/nav -->
+  <link rel="stylesheet" href="css/buslist.css" />
+  <!-- Page‐specific CSS -->
+  <link rel="stylesheet" href="css/payment_successful.css" />
+</head>
+<body>
+  <!-- NAVIGATION DRAWER (same as other pages) -->
+  <div id="nav-drawer" class="nav-drawer">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="#">Journey</a></li>
+      <li class="nav-item"><a href="#">Alert</a></li>
+      <li class="nav-item"><a href="#">Account</a></li>
+    </ul>
+  </div>
+
+  <!-- HEADER + BACKGROUND BANNER -->
+  <header class="header-banner">
+    <img src="images/bgimage.png" alt="Background map" class="banner-bg" />
+    <div class="header-content">
+      <!-- Go Back Button (goes back to payment.html) -->
+      <button id="back-btn" class="back-btn"><</button>
+
+      <!-- Centered Logo -->
+      <div class="logo-container">
+        <img src="images/logo.png" alt="SLTB logo" class="logo-img" />
+      </div>
+
+      <!-- Hamburger Menu -->
+      <div id="menu-btn" class="menu-btn">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: Payment Successful Details -->
+  <main>
+    <div class="box success-box">
+      <!-- Green Check Icon -->
+      <div class="icon-container">
+        <!-- Replace with your actual image if you have one. Here’s an inline SVG: -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="64"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#28A745"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-check-circle"
+        >
+          <path d="M22 11.08V12a10 10 0 1 1-5-8.66"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+
+      <!-- Thank You Text -->
+      <div class="thank-you">
+        <span class="small-text">Thank you</span>
+        <span class="large-text">Your booking is successful.</span>
+      </div>
+
+      <!-- Booking Details Table -->
+      <div class="details-table">
+        <div class="row">
+          <span class="label">Ticket reference no</span>
+          <span class="value">22022002</span>
+        </div>
+        <div class="row">
+          <span class="label">Seat no</span>
+          <span class="value">22</span>
+        </div>
+        <div class="row">
+          <span class="label">Deport</span>
+          <span class="value">Wennappuwa</span>
+        </div>
+        <div class="row">
+          <span class="label">Route</span>
+          <span class="value">Jaffna – Colombo</span>
+        </div>
+        <div class="row">
+          <span class="label">Travel date</span>
+          <span class="value">2025-06-22</span>
+        </div>
+        <div class="row">
+          <span class="label">Time</span>
+          <span class="value">20:00</span>
+        </div>
+        <div class="row">
+          <span class="label">Mode of payment</span>
+          <span class="value">Credit/Debit card</span>
+        </div>
+        <div class="row">
+          <span class="label">V-Code</span>
+          <span class="value">2022983</span>
+        </div>
+      </div>
+
+      <!-- Important Notice Box -->
+      <div class="notice-box">
+        <div class="notice-header">
+          <span class="notice-icon">⚠️</span>
+          <span class="notice-title">Important Notice</span>
+        </div>
+        <div class="notice-content">
+          <p>Be at boarding point before 30 minutes.</p>
+          <p>Show V-Code to conductor &amp; obtain regular ticket once you onboard.</p>
+          <p>
+            You will be sent a eTicket via email &amp; SMS. Once bus starts its
+            journey, we will notify you via SMS &amp; you can track the bus.
+          </p>
+        </div>
+      </div>
+
+      <!-- See My Journey Button -->
+      <button id="see-journey-btn" class="see-journey-btn">See My Journey</button>
+    </div>
+  </main>
+
+  <!-- FOOTER: WhatsApp + Call + Bottom Navigation (same as other pages) -->
+  <footer>
+    <div class="footer-actions">
+      <button class="chat-btn">
+        <img src="images/4.png" alt="WhatsApp icon" class="whatsapp-icon" />
+        Need help ?
+      </button>
+      <button class="call-btn">
+        <img src="images/5.png" alt="Call icon" class="whatsapp-icon" />
+        Call us – 1315
+      </button>
+    </div>
+
+    <nav class="bottom-nav">
+      <div class="nav-item-bottom">
+        <img src="images/h.png" alt="Home" class="nav-icon-bottom" />
+        <span class="nav-label-bottom">Home</span>
+      </div>
+      <div class="nav-item-bottom">
+        <img src="images/j.png" alt="Journey" class="nav-icon-bottom" />
+        <span class="nav-label-bottom">Journey</span>
+      </div>
+      <div class="nav-item-bottom">
+        <img src="images/al.png" alt="Alert" class="nav-icon-bottom" />
+        <span class="nav-label-bottom">Alert</span>
+      </div>
+      <div class="nav-item-bottom">
+        <img src="images/ac.png" alt="Account" class="nav-icon-bottom" />
+        <span class="nav-label-bottom">Account</span>
+      </div>
+    </nav>
+  </footer>
+
+  <!-- Page‐specific JavaScript -->
+  <script src="js/payment_successful.js"></script>
+</body>
+</html>
